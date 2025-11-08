@@ -1,9 +1,13 @@
 {
   "compilerOptions": {
-    "target": "ES6",
+    "target": "es6",              // Компілювати в сучасний стандарт JS
     "module": "commonjs",
+    "outDir": "./dist",           // Куди складати скомпільований JS (у вас вже є папка dist)
+    "rootDir": "./src",           // Звідки брати вихідний TS (у вас є src/index.ts)
     "strict": true,
-    "rootDir": "src",
-    "outDir": "dist"
-  }
+    "esModuleInterop": true
+  },
+  "include": [
+    "src" // Включити всі файли в папці src
+  ]
 }
